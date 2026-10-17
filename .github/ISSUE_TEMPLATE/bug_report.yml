@@ -1,0 +1,59 @@
+name: Bug report
+description: Report a reproducible problem in the project.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "For security vulnerabilities, follow SECURITY.md and report privately. Redact secrets and personal data from all public reports."
+  - type: textarea
+    id: summary
+    attributes:
+      label: Bug summary
+      description: What went wrong?
+      placeholder: Describe the problem in one or two sentences.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Give the smallest set of steps that shows the problem.
+      placeholder: "1. Open ...\n2. Run ...\n3. Observe ..."
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behaviour
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment and version
+      description: Include relevant project version, operating system, runtime, or browser.
+      placeholder: "Project version; OS; runtime/browser"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Optional. Redact tokens, passwords, personal data, and private URLs.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Screenshots or additional context
+      description: Optional. Remove personal or sensitive information before attaching files.
+    validations:
+      required: false

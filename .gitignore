@@ -1,0 +1,35 @@
+# Local configuration and secrets; keep .env.example tracked.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_ed25519
+
+# Dependencies and local environments
+node_modules/
+.venv/
+venv/
+
+# Build and test outputs
+dist/
+build/
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
